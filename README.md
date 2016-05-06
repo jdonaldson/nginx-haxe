@@ -6,7 +6,7 @@ To use it, you must have an Nginx installation compiled with Lua support.  You
 also must have an up to date version of Haxe 3.3  for the new Lua
 target (currently unreleased, but available as a
 [nightly](http://hxbuilds.s3-website-us-east-1.amazonaws.com/builds/haxe/index.html)
-or from [source](https://github.com/HaxeFoundation/haxe).
+or from [source](https://github.com/HaxeFoundation/haxe)).
 
 You can use the lua generated code in a few different ways.  Here's an
 nginx.conf that executes a haxe-compiled lua script for a given location:
