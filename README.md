@@ -4,7 +4,7 @@ This is a set of externs for [Nginx's Lua scripting api](https://github.com/open
 
 To use it, you must have an Nginx installation compiled with Lua support.  You
 also must have an up to date version of Haxe 3.3  for the new Lua
-target(currently unreleaseed, but available as a
+target (currently unreleased, but available as a
 [nightly](http://hxbuilds.s3-website-us-east-1.amazonaws.com/builds/haxe/index.html)
 or from [source](https://github.com/HaxeFoundation/haxe).
 
