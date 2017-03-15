@@ -1,4 +1,6 @@
 package ngx;
+import lua.Table;
+
 @:native("ngx.req")
 extern class Req {
     /**

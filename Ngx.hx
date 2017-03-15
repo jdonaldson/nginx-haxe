@@ -12,14 +12,14 @@ extern class Ngx {
     /**
       Read and write Nginx variable values.
     **/
-    @:native("ngx.var") public static var _var : Table<String,Dynamic>;
+    @:native("var") public static var nvar : Table<String,Dynamic>;
 
     /**
       The ngx.null constant is a NULL light userdata usually used to represent nil
       values in Lua tables etc and is similar to the lua-cjson library's cjson.null
       constant. This constant was first introduced in the v0.5.0rc5 release.
      **/
-    @:native("ngx.null") public static var _null : Int;
+    @:native("null") public static var nnull : Int;
 
     /**
       This table can be used to store per-request Lua context data and has a life
@@ -49,5 +49,7 @@ extern class Ngx {
       first and then output body data.
     **/
     public static function print(args : Rest<Dynamic>) : Void;
+    
+    public static function exit(code : Int) : Void;
 }
 
