@@ -1,3 +1,4 @@
+package ngx;
 @:native("ngx.req")
 extern class Req {
     /**

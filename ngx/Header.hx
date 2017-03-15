@@ -1,3 +1,4 @@
+package ngx;
 import lua.Table;
 
 @:native("ngx.header")
