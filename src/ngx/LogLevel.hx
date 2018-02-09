@@ -1,3 +1,5 @@
+package ngx;
+
 @:native("ngx")
 extern enum LogLevel {
     STDERR;

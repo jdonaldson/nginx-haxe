@@ -1,4 +1,5 @@
 package ngx;
+
 @:native("ngx.location")
 extern class Location {
     public static function capture(uri : String, ?options : Dynamic<Dynamic>) : Response;

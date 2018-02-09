@@ -1,3 +1,5 @@
+package ngx;
+
 import haxe.extern.Rest;
 import lua.Table;
 
@@ -49,7 +51,7 @@ extern class Ngx {
       first and then output body data.
     **/
     public static function print(args : Rest<Dynamic>) : Void;
-    
+
     public static function exit(code : Int) : Void;
 }
 

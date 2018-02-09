@@ -1,3 +1,5 @@
+package ngx;
+
 @:native("ngx")
 extern enum HttpMethod {
     HTTP_GET;

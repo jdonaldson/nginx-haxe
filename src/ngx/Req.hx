@@ -1,4 +1,5 @@
 package ngx;
+
 import lua.Table;
 
 @:native("ngx.req")
@@ -39,7 +40,7 @@ extern class Req {
      **/
     public static function set_method(method_id : HttpMethod) : Void;
 
-    /** 
+    /**
       Rewrite the current request's (parsed) URI by the uri argument. The uri
       argument must be a Lua string and cannot be of zero length, or a Lua
       exception will be thrown.
@@ -57,7 +58,7 @@ extern class Req {
      **/
     public static function set_uri_args(args : Dynamic) : Void;
 
-    /** 
+    /**
       Returns a Lua table holding all the current request URL query arguments.
      **/
     public static function get_uri_args(?max_args : Int) : Table<String, String>;
@@ -69,12 +70,12 @@ extern class Req {
       lua_need_request_body directive to avoid errors.
      **/
     public static function get_post_args(?max_args : Int) : Table<String, String>;
-    
+
     /**
       Returns a Lua table holding all the current request header
      **/
     public static function get_headers(?max_headers : Int, ?raw : Bool) : Table<String, String>;
-    
+
     /**
       Set the current request's request header named header_name to value
       header_value, overriding any existing ones.
@@ -87,7 +88,7 @@ extern class Req {
       subsequently initiated subrequests will inherit the change by default.
      **/
     public static function clear_header(header_name : String) : Void;
-    
+
     /**
       Reads the client request body synchronously without blocking the Nginx
       event loop.
@@ -149,7 +150,7 @@ extern class Req {
       ngx.req.init_body and ngx.req.append_body calls.
      **/
     public static function finish_body() : Void;
-    
+
     /**
       Returns a read-only cosocket object that wraps the downstream connection.
       Only receive and receiveuntil methods are supported on this object.

@@ -1,3 +1,5 @@
+package ngx;
+
 @:native("ngx")
 @:enum extern abstract HttpStatus(Int) {
     var HTTP_CONTINUE : Int;
