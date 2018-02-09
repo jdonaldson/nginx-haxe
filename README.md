@@ -1,4 +1,4 @@
-# NginHx - Haxe externs for the Nginx Lua api
+# Nginx-haxe - Haxe externs for the Nginx Lua api
 
 This is a set of externs for [Nginx's Lua scripting api](https://github.com/openresty/lua-nginx-module).
 
@@ -21,7 +21,7 @@ nginx.conf that executes a haxe-compiled lua script for a given location:
             default_type 'text/plain';
             content_by_lua_file /path/to/ngx.lua;
         }
-        
+
         [...]
    }
 ```
@@ -42,7 +42,7 @@ Make sure to include the source for this library in your class path:
 ```hxml
 -main Main
 -lua ngx.lua
--cp /path/to/nginhx
+-cp /path/to/nginx-haxe
 ```
 
 Note that Nginx will cache the lua code the first time it is loaded.  If you're
