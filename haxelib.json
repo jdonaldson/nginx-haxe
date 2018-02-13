@@ -1,0 +1,18 @@
+{
+  "name": "nginx-haxe",
+  "license": "MIT",
+  "tags": [
+    "nginx",
+    "extern",
+    "lua",
+    "api"
+  ],
+  "classPath": "src",
+  "contributors": [
+    "jdonaldson"
+  ],
+  "releasenote": "initial release",
+  "version": "0.0.0",
+  "url": "https://github.com/jdonaldson/nginx-haxe/",
+  "dependencies": {}
+}
