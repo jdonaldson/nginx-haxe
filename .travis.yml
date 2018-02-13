@@ -17,18 +17,14 @@ matrix:
     - haxe: development
 
 before_install:
-  - brew update && brew bundle
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install nginx; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install nginx; fi
 
 install:
   - haxelib install travix
   # to always use the latest version of travix comment out the previous line and uncomment the next
   # - haxelib git travix https://github.com/back2dos/travix && pushd . && cd $(haxelib config)travix/git && haxe build-neko.hxml && popd
   - haxelib run travix install
-
-addons:
-  apt:
-    packages:
-    - nginx
 
 script:
   - haxelib run travix lua

@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/jdonaldson/nginx-haxe.svg?branch=master)](https://travis-ci.org/jdonaldson/nginx-haxe)
-
 # Nginx-haxe - Haxe externs for the Nginx Lua api
+
+[![Build Status](https://travis-ci.org/jdonaldson/nginx-haxe.svg?branch=master)](https://travis-ci.org/jdonaldson/nginx-haxe)
 
 This is a set of externs for [Nginx's Lua scripting api](https://github.com/openresty/lua-nginx-module).
 
